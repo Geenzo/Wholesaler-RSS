@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="js.js"></script>
+    <style type="text/css">
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+
+        <div data-role="header">
+        </div>
+        <div data-role="content">
+            <h2>Wholesaler news feeds</h2>
+            <p>List of new updates from wholesalers</p>
+            <ul data-role="listview" data-inset="true">
+                <a id="Affinity" href="#Affinity"><button class="btn btn-primary" onclick="DisplayFeeds('Affinity')">Affinity Water News Feed</button></a>
+                <a id="Bristol" href="#Bristol"><button class="btn btn-primary" onclick="DisplayFeeds('Bristol')">Bristol Water News Feed</button></a>
+                <a id="Cambridge" href="#Cambridge"><button class="btn btn-primary" onclick="DisplayFeeds('Cambridge')">Cambridge Water News Feed</button></a>
+                <a id="EssexSuffolk" href="#EssexSuffolk"><button class="btn btn-primary" onclick="DisplayFeeds('EssexSuffolk')">Essex & Suffolk Water News Feed</button></a>
+                <a id="Hartlepool" href="#Hartlepool"><button class="btn btn-primary" onclick="DisplayFeeds('Hartlepool')">Hartlepool Water News Feed</button></a>
+                <a id="SouthEast" href="#SouthEast"><button class="btn btn-primary" onclick="DisplayFeeds('SouthEast')">South East Water News Feed</button></a>
+                <a id="SouthStaffs" href="#SouthStaffs"><button class="btn btn-primary" onclick="DisplayFeeds('SouthStaffs')">South Staffs Water News Feed</button></a>
+                <a id="SouthEastSurrey" href="#SouthEastSurrey"><button class="btn btn-primary" onclick="DisplayFeeds('SouthEastSurrey')">South & East Surrey Water News Feed</button></a>
+                <a id="AnglianWater" href="#AnglianWater"><button class="btn btn-primary" onclick="DisplayFeeds('AnglianWater')">Anglian Water News Feed</button></a>
+                <a id="DwrCymru" href="#DwrCymru"><button class="btn btn-primary" onclick="DisplayFeeds('DwrCymru')">Northern Ireland Water News Feed</button></a>
+                <a id="NorthernIreland" href="#NorthernIreland"><button class="btn btn-primary" onclick="DisplayFeeds('NorthernIreland')">Dwr Cymru Water News Feed</button></a>
+                <a id="Northumbrian" href="#Northumbrian"><button class="btn btn-primary" onclick="DisplayFeeds('Northumbrian')">Northumbrian Water News Feed</button></a>
+                <a id="SevernTrent" href="#SevernTrent"><button class="btn btn-primary" onclick="DisplayFeeds('SevernTrent')">Severn Trent Water News Feed</button></a>
+                <a id="SouthWestWater" href="#SouthWestWater"><button class="btn btn-primary" onclick="DisplayFeeds('SouthWestWater')">South West Water News Feed</button></a>
+                <a id="SouthernWater" href="#SouthernWater"><button class="btn btn-primary" onclick="DisplayFeeds('SouthernWater')">Southern Water News Feed</button></a>
+                <a id="unitedutilities" href="#unitedutilities"><button class="btn btn-primary" onclick="DisplayFeeds('unitedutilities')">United Utilities News Feed</button></a>
+                <a id="wessexwater" href="#wessexwater"><button class="btn btn-primary" onclick="DisplayFeeds('wessexwater')">Wessex Water News Feed</button></a>
+                <a id="YorkshireWater" href="#YorkshireWater"><button class="btn btn-primary" onclick="DisplayFeeds('YorkshireWater')">Yorkshire Water News Feed</button></a>
+                <a id="albionwater" href="#albionwater"><button class="btn btn-primary" onclick="DisplayFeeds('albionwater')">Albion Water News Feed</button></a>
+                <a id="SSE" href="#SSE"><button class="btn btn-primary" onclick="DisplayFeeds('SSE')">SSE News Feed</button></a>
+                <a id="veoliauk" href="#veoliauk"><button class="btn btn-primary" onclick="DisplayFeeds('veoliauk')">Veolia Water Projects News Feed</button></a>
+                <a id="ScottishWater" href="#ScottishWater"><button class="btn btn-primary" onclick="DisplayFeeds('ScottishWater')">Scottish Water News Feed</button></a>
+                <a id="portsmouth" href="#portsmouth"><button class="btn btn-primary" onclick="DisplayFeeds('portsmouth')">Portsmouth Water News Feed</button></a>
+                <a id="Thames" href="#Thames"><button class="btn btn-primary" onclick="DisplayFeeds('Thames')">Thames Water News Feed</button></a>
+            </ul>
+        </div>
+        <div>
+        <hr>
+        </div>
+
+<div id="Displaydiv">
+        <div  >
+            <h1 id="DisplayTitle"></h1>
+        </div>
+        <div data-role="content">
+            <ul id="DisplayList">
+                <!-- Display twitter feed will be populated here. -->
+            </ul>
+        </div>
+        <div>
+        </div>
+</div>
+
+
+</body>
+</html>
